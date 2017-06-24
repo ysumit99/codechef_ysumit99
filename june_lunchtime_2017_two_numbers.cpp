@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 {
 	int t;
 	cin>>t;
-	long long int a,b,n,temp,temp2;
+	long long int a,b,n;
 
 
 	for (int i = 0; i < t; ++i)
@@ -18,7 +18,6 @@ int main(int argc, char const *argv[])
 		if(n%2 == 0)
 		{
 			
-
 			(a >= b)? (max = a,min = b) : (max = b,min = a);
 
 			printf("%lld\n",max/min);
@@ -28,9 +27,8 @@ int main(int argc, char const *argv[])
 		else
 		{
 			
-
-
 			(a*2 >= b)? (max = a*2,min = b) : (max = b,min = a*2);
+			
 			printf("%lld\n",max/min);
 
 		}
